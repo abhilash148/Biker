@@ -59,6 +59,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
         window.rootViewController = vc
+        
+        // reference: https://fluffy.es/how-to-transition-from-login-screen-to-tab-bar-controller/
     }
 
 
