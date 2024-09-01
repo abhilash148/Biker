@@ -12,13 +12,11 @@ class ViewController: UIViewController {
     
     @IBAction func onClickNext(_ sender: UIButton) {
         
-        print("Next button clicked")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let secondVC = self.storyboard?.instantiateViewController(identifier: "SecondVC") as! SecondViewController
+        let tabVC = storyboard.instantiateViewController(withIdentifier: "tabVC")
         
-        self.navigationController?.pushViewController(secondVC, animated: true)
-        
-        
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(tabVC)
         
     }
     

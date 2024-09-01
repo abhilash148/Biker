@@ -17,6 +17,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let navVC = storyboard.instantiateViewController(identifier: "navVC")
+        window?.rootViewController = navVC
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -45,6 +52,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+    }
+    
+    func changeRootViewController(_ vc: UIViewController, animated: Bool = true) {
+        guard let window = self.window else {
+            return
+        }
+        window.rootViewController = vc
     }
 
 
