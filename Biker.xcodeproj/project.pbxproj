@@ -16,7 +16,6 @@
 		8DEBA5D42C83A7D700112601 /* BikerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBA5D32C83A7D700112601 /* BikerTests.swift */; };
 		8DEBA5DE2C83A7D700112601 /* BikerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBA5DD2C83A7D700112601 /* BikerUITests.swift */; };
 		8DEBA5E02C83A7D700112601 /* BikerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBA5DF2C83A7D700112601 /* BikerUITestsLaunchTests.swift */; };
-		8DEBA5ED2C83B10D00112601 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBA5EC2C83B10D00112601 /* SecondViewController.swift */; };
 		8DEBA5EF2C8400CD00112601 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DEBA5EE2C8400CC00112601 /* GoogleService-Info.plist */; };
 		8DEBA5F22C8401B500112601 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 8DEBA5F12C8401B500112601 /* FirebaseAnalytics */; };
 		8DEBA5F42C8401B600112601 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 8DEBA5F32C8401B600112601 /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -28,6 +27,8 @@
 		8DEBA6002C8401B600112601 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 8DEBA5FF2C8401B600112601 /* FirebaseRemoteConfig */; };
 		8DEBA6022C84039300112601 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBA6012C84039200112601 /* HomeViewController.swift */; };
 		8DEBA6042C8403C800112601 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBA6032C8403C800112601 /* ProfileViewController.swift */; };
+		8DEBA6072C842ABF00112601 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBA6062C842ABF00112601 /* EditProfileController.swift */; };
+		8DEBA6082C842DDC00112601 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DEBA5C22C83A7D500112601 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +62,10 @@
 		8DEBA5D92C83A7D700112601 /* BikerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEBA5DD2C83A7D700112601 /* BikerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikerUITests.swift; sourceTree = "<group>"; };
 		8DEBA5DF2C83A7D700112601 /* BikerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8DEBA5EC2C83B10D00112601 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		8DEBA5EE2C8400CC00112601 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8DEBA6012C84039200112601 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8DEBA6032C8403C800112601 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8DEBA6062C842ABF00112601 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,17 +124,14 @@
 		8DEBA5BB2C83A7D500112601 /* Biker */ = {
 			isa = PBXGroup;
 			children = (
+				8DEBA6052C84298900112601 /* ViewControllers */,
 				8DEBA5EE2C8400CC00112601 /* GoogleService-Info.plist */,
 				8DEBA5BC2C83A7D500112601 /* AppDelegate.swift */,
 				8DEBA5BE2C83A7D500112601 /* SceneDelegate.swift */,
-				8DEBA5C02C83A7D500112601 /* ViewController.swift */,
 				8DEBA5C22C83A7D500112601 /* Main.storyboard */,
 				8DEBA5C52C83A7D700112601 /* Assets.xcassets */,
 				8DEBA5C72C83A7D700112601 /* LaunchScreen.storyboard */,
 				8DEBA5CA2C83A7D700112601 /* Info.plist */,
-				8DEBA5EC2C83B10D00112601 /* SecondViewController.swift */,
-				8DEBA6012C84039200112601 /* HomeViewController.swift */,
-				8DEBA6032C8403C800112601 /* ProfileViewController.swift */,
 			);
 			path = Biker;
 			sourceTree = "<group>";
@@ -153,6 +151,17 @@
 				8DEBA5DF2C83A7D700112601 /* BikerUITestsLaunchTests.swift */,
 			);
 			path = BikerUITests;
+			sourceTree = "<group>";
+		};
+		8DEBA6052C84298900112601 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8DEBA6032C8403C800112601 /* ProfileViewController.swift */,
+				8DEBA6012C84039200112601 /* HomeViewController.swift */,
+				8DEBA5C02C83A7D500112601 /* ViewController.swift */,
+				8DEBA6062C842ABF00112601 /* EditProfileController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DEBA5C62C83A7D700112601 /* Assets.xcassets in Resources */,
+				8DEBA6082C842DDC00112601 /* Main.storyboard in Resources */,
 				8DEBA5EF2C8400CD00112601 /* GoogleService-Info.plist in Resources */,
 				8DEBA5C92C83A7D700112601 /* Base in Resources */,
 				8DEBA5C42C83A7D500112601 /* Base in Resources */,
@@ -302,10 +312,10 @@
 			files = (
 				8DEBA6042C8403C800112601 /* ProfileViewController.swift in Sources */,
 				8DEBA6022C84039300112601 /* HomeViewController.swift in Sources */,
-				8DEBA5ED2C83B10D00112601 /* SecondViewController.swift in Sources */,
 				8DEBA5C12C83A7D500112601 /* ViewController.swift in Sources */,
 				8DEBA5BD2C83A7D500112601 /* AppDelegate.swift in Sources */,
 				8DEBA5BF2C83A7D500112601 /* SceneDelegate.swift in Sources */,
+				8DEBA6072C842ABF00112601 /* EditProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

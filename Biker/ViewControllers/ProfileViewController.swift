@@ -10,6 +10,13 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    @IBAction func onClickEditProfile(_ sender: UIButton) {
+        
+        let editProfileVC = self.storyboard?.instantiateViewController(identifier: "editProfileVC") as! EditProfileController
+        
+        self.navigationController?.pushViewController(editProfileVC, animated: true)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
