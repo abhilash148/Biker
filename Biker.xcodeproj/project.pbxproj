@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D0FFFDF2C8E58A2008ED4CF /* BikerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0FFFDE2C8E58A2008ED4CF /* BikerCard.swift */; };
 		8DEBA5BD2C83A7D500112601 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBA5BC2C83A7D500112601 /* AppDelegate.swift */; };
 		8DEBA5BF2C83A7D500112601 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBA5BE2C83A7D500112601 /* SceneDelegate.swift */; };
 		8DEBA5C12C83A7D500112601 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBA5C02C83A7D500112601 /* ViewController.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D0FFFDE2C8E58A2008ED4CF /* BikerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikerCard.swift; sourceTree = "<group>"; };
 		8DEBA5B92C83A7D500112601 /* Biker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Biker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEBA5BC2C83A7D500112601 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DEBA5BE2C83A7D500112601 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D0FFFDD2C8E587C008ED4CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D0FFFDE2C8E58A2008ED4CF /* BikerCard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D0FFFE02C8E58DC008ED4CF /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		8DEBA5B02C83A7D500112601 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +141,7 @@
 		8DEBA5BB2C83A7D500112601 /* Biker */ = {
 			isa = PBXGroup;
 			children = (
+				8D0FFFDD2C8E587C008ED4CF /* Models */,
 				8DEBA6052C84298900112601 /* ViewControllers */,
 				8DEBA5EE2C8400CC00112601 /* GoogleService-Info.plist */,
 				8DEBA5BC2C83A7D500112601 /* AppDelegate.swift */,
@@ -156,6 +174,7 @@
 		8DEBA6052C84298900112601 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8D0FFFE02C8E58DC008ED4CF /* TableViewCells */,
 				8DEBA6032C8403C800112601 /* ProfileViewController.swift */,
 				8DEBA6012C84039200112601 /* HomeViewController.swift */,
 				8DEBA5C02C83A7D500112601 /* ViewController.swift */,
@@ -316,6 +335,7 @@
 				8DEBA5BD2C83A7D500112601 /* AppDelegate.swift in Sources */,
 				8DEBA5BF2C83A7D500112601 /* SceneDelegate.swift in Sources */,
 				8DEBA6072C842ABF00112601 /* EditProfileController.swift in Sources */,
+				8D0FFFDF2C8E58A2008ED4CF /* BikerCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

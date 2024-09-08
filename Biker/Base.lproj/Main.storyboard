@@ -47,21 +47,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Abhilash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bG6-Dq-LZb">
-                                <rect key="frame" x="153.66666666666666" y="415.66666666666669" width="85.666666666666657" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="C2j-BX-tz3">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XWT-Me-lhr"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bG6-Dq-LZb" firstAttribute="centerY" secondItem="zB3-tp-lkp" secondAttribute="centerY" id="5Jk-Mw-tD8"/>
-                            <constraint firstItem="bG6-Dq-LZb" firstAttribute="centerX" secondItem="zB3-tp-lkp" secondAttribute="centerX" id="vrI-l9-lYj"/>
+                            <constraint firstItem="C2j-BX-tz3" firstAttribute="leading" secondItem="XWT-Me-lhr" secondAttribute="leading" id="R3f-9e-XZR"/>
+                            <constraint firstItem="C2j-BX-tz3" firstAttribute="top" secondItem="XWT-Me-lhr" secondAttribute="top" id="RbS-F8-eVn"/>
+                            <constraint firstItem="XWT-Me-lhr" firstAttribute="bottom" secondItem="C2j-BX-tz3" secondAttribute="bottom" id="dMC-io-kWv"/>
+                            <constraint firstItem="XWT-Me-lhr" firstAttribute="trailing" secondItem="C2j-BX-tz3" secondAttribute="trailing" id="r0J-9Z-qZk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tKS-sT-q2H"/>
+                    <connections>
+                        <outlet property="tableView" destination="C2j-BX-tz3" id="ZiM-Md-3lk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTG-fV-KgZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -238,7 +241,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
