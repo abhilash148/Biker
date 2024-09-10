@@ -16,5 +16,4 @@ struct BikerCard {
         self.name = name
         self.number = number
     }
-    
 }

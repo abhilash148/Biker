@@ -1,0 +1,26 @@
+
+/* Class = "UIButton"; configuration.title = "Next"; ObjectID = "1BO-YT-fu6"; */
+"1BO-YT-fu6.configuration.title" = "Próxima";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1BO-YT-fu6"; */
+"1BO-YT-fu6.normalTitle" = "Botón";
+
+/* Class = "UIButton"; configuration.title = "Edit Profile"; ObjectID = "1cN-nu-uGo"; */
+"1cN-nu-uGo.configuration.title" = "Editar perfil";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1cN-nu-uGo"; */
+"1cN-nu-uGo.normalTitle" = "Botón";
+
+/* Class = "UITabBarItem"; title = "Profile"; ObjectID = "NXy-6Z-jYc"; */
+"NXy-6Z-jYc.title" = "perfil";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "iD3-b5-dBJ"; */
+"iD3-b5-dBJ.title" = "Hogar";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "ii5-zw-Wh9"; */
+"ii5-zw-Wh9.text" = "perfil";
+
+/* Class = "UILabel"; text = "Edit Profile"; ObjectID = "kVS-MH-5g8"; */
+"kVS-MH-5g8.text" = "Editar perfil";
+
+"bsL-zl-CaJ.text" = "encabezamiento";

@@ -47,8 +47,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsL-zl-CaJ">
+                                <rect key="frame" x="0.0" y="103" width="393" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lGp-8Y-Ldw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="C2j-BX-tz3">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="147" width="393" height="622"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -56,8 +65,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="C2j-BX-tz3" firstAttribute="leading" secondItem="XWT-Me-lhr" secondAttribute="leading" id="R3f-9e-XZR"/>
-                            <constraint firstItem="C2j-BX-tz3" firstAttribute="top" secondItem="XWT-Me-lhr" secondAttribute="top" id="RbS-F8-eVn"/>
+                            <constraint firstItem="C2j-BX-tz3" firstAttribute="top" secondItem="bsL-zl-CaJ" secondAttribute="bottom" constant="4" id="RbS-F8-eVn"/>
+                            <constraint firstItem="XWT-Me-lhr" firstAttribute="trailing" secondItem="bsL-zl-CaJ" secondAttribute="trailing" id="YFJ-iz-h3y"/>
                             <constraint firstItem="XWT-Me-lhr" firstAttribute="bottom" secondItem="C2j-BX-tz3" secondAttribute="bottom" id="dMC-io-kWv"/>
+                            <constraint firstItem="bsL-zl-CaJ" firstAttribute="leading" secondItem="XWT-Me-lhr" secondAttribute="leading" id="dh6-gh-a1d"/>
+                            <constraint firstItem="bsL-zl-CaJ" firstAttribute="top" secondItem="XWT-Me-lhr" secondAttribute="top" id="giy-xK-Npg"/>
                             <constraint firstItem="XWT-Me-lhr" firstAttribute="trailing" secondItem="C2j-BX-tz3" secondAttribute="trailing" id="r0J-9Z-qZk"/>
                         </constraints>
                     </view>
